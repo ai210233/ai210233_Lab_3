@@ -1,0 +1,164 @@
+body {
+    text-align: center;
+    font-family: Arial, sans-serif;
+    background-image: url('./208-2082360_free-abstract-website-backgrounds.jpg');
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+h1{
+    background-color: #6374a1; 
+    color: #fff;
+    padding: 30px;
+}
+
+h2{
+    font-size: 40px;
+}
+
+table, th, td {
+    border: 1px solid #ccc;
+}
+
+th, td {
+    padding: 15px;
+    text-align: left;
+}
+
+th {
+    background-color: #6374a1;
+}
+
+.profilephoto img {
+    display: block;
+    margin: 0 auto;
+    width: 300px;
+    height: auto;
+}
+
+.dashboard {
+    background-color: #6577a8;
+    color: #fff;
+    padding: 40px;
+    display: flex;
+    justify-content: center;
+}
+
+.dashboard a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 40px;
+    font-size: 24px;
+    position: relative;
+    transition: all 0.3s;
+}
+
+.dashboard a::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 3px;
+    background: #fff;
+    transition: all 0.3s;
+}
+
+.dashboard a:hover {
+    color: #7922dd;
+}
+
+.dashboard a:hover::before {
+    width: 100%;
+}
+
+#content {
+    width: 80%;
+    margin: 0 auto;
+    text-align: left;
+}
+
+#biodata, #campus-life, #hobbies {
+    background-color: rgba(255, 255, 255, 1); /* Non-transparent background for Biodata section */
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    margin-bottom: 20px;
+    margin-top: 10px;
+}
+
+.slideshow-container {
+    position: relative;
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+.mySlides {
+    display: none;
+}
+
+.mySlides img {
+    width: 50%;
+    height: 50%;
+}
+
+.slideshow-button-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.prev, .next {
+    cursor: pointer;
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.6);
+    color: #fff;
+    border-radius: 5px;
+}
+
+.prev {
+    margin-right: 10px;
+}
+
+.next {
+    margin-left: 10px;
+}
+
+.show-all-button {
+    margin-top: 20px;
+    margin-bottom: 20px; /* Add some space between the button and the slideshow */
+    background-color: #007BFF;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.show-all-button:hover {
+    background-color: #00BFFF;
+}
+
+#hobbies .slideshow-container-hobbies {
+    position: relative;
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+#hobbies .mySlides-hobbies {
+    display: none;
+    transition: opacity 1s; /* Add a transition effect for fading */
+}
+
+#hobbies .mySlides-hobbies img {
+    width: 50%;
+    height: 50%;
+}
